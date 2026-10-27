@@ -1,165 +1,129 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Rajshekhar Ugale - IT student and aspiring software developer.">
-  <title>Rajshekhar Ugale | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080b12" />
+  <meta name="description" content="Rajshekhar Ugale — IT student and aspiring software developer." />
+  <title>Rajshekhar Ugale | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
+  <div class="page-grid" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="pointer-glow" aria-hidden="true"></div>
 
-  <header class="navbar">
-    <a class="logo" href="#home">RAJ<span>.</span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"
-      aria-expanded="false">☰</button>
-    <nav id="navLinks">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Rajshekhar home"><span class="brand-mark">R<span>.</span></span><span class="brand-name">RAJSHEKHAR<span class="brand-muted">/DEV</span></span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="nav-contact">Let's connect <span>↗</span></a>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="eyebrow">HELLO, WORLD! I'M</p>
-        <h1>Rajshekhar<br><span>Ugale.</span></h1>
-        <h2>Aspiring Software Developer</h2>
-        <p class="intro">
-          I'm an Information Technology student passionate about coding,
-          problem-solving and building useful digital experiences.
-        </p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary">Explore My Work ↗</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <div class="status-pill reveal"><span class="status-dot"></span> OPEN TO LEARNING & OPPORTUNITIES</div>
+        <p class="eyebrow reveal"><span class="eyebrow-line"></span> HELLO, WORLD! I'M</p>
+        <h1 class="hero-title reveal">Rajshekhar<br /><span class="gradient-text">Ugale<span class="title-period">.</span></span></h1>
+        <div class="role-line reveal"><span class="role-prefix">&gt;</span><span id="typed-role">Aspiring Software Developer</span><span class="type-caret">|</span></div>
+        <p class="hero-description reveal">I’m an IT student building my skills in web development, programming, and problem-solving — one project at a time.</p>
+        <div class="hero-actions reveal">
+          <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
+          <a class="button button-ghost" href="#contact">Contact me <span>↗</span></a>
         </div>
-        <p class="availability"><span></span> Always learning. Always building.</p>
+        <div class="hero-meta reveal"><span><span class="meta-symbol">⌁</span> Based in Pune, India</span><span class="meta-divider"></span><span><span class="meta-symbol">✳</span> Always learning</span></div>
       </div>
-
-      <div class="hero-card">
-        <div class="terminal-top">
-          <span></span><span></span><span></span>
-          <p>developer.js</p>
+      <div class="hero-visual reveal" aria-label="Decorative developer terminal illustration">
+        <div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div>
+        <div class="visual-core"><span class="core-bracket">&lt;</span><span class="core-slash">/</span><span class="core-bracket">&gt;</span></div>
+        <div class="float-card float-card-top"><span class="mini-dot"></span> building something new</div>
+        <div class="float-card float-card-bottom"><span class="float-icon">✦</span><div><strong>Curiosity</strong><small>drives the process</small></div></div>
+        <div class="code-window">
+          <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>about-me.js</span><span class="window-menu">•••</span></div>
+          <div class="code-content">
+            <p><span class="line-no">01</span> <span class="code-purple">const</span> <span class="code-blue">developer</span> = {</p>
+            <p><span class="line-no">02</span> &nbsp; name: <span class="code-green">'Rajshekhar'</span>,</p>
+            <p><span class="line-no">03</span> &nbsp; focus: <span class="code-green">'Web Dev'</span>,</p>
+            <p><span class="line-no">04</span> &nbsp; learning: <span class="code-green">'Every day'</span>,</p>
+            <p><span class="line-no">05</span> &nbsp; mindset: <span class="code-green">'Build. Learn.'</span></p>
+            <p><span class="line-no">06</span> };</p>
+            <p class="code-last"><span class="line-no">07</span> <span class="code-comment">// let's create something cool</span><span class="small-caret"></span></p>
+          </div>
         </div>
-        <pre><code><span class="code-purple">const</span> developer = {
-  name: <span class="code-green">"Rajshekhar"</span>,
-  branch: <span class="code-green">"IT"</span>,
-  learning: [
-    <span class="code-green">"Java"</span>,
-    <span class="code-green">"Web Development"</span>,
-    <span class="code-green">"DSA"</span>
-  ],
-  mindset: <span class="code-green">"Keep Building"</span>
-};</code></pre>
-        <p class="terminal-footer">// Turning ideas into projects.</p>
+        <span class="visual-cross cross-one">+</span><span class="visual-cross cross-two">+</span>
       </div>
-      <a class="scroll-link" href="#about">SCROLL TO EXPLORE ↓</a>
+      <a class="scroll-cue" href="#about"><span class="scroll-wheel"></span> SCROLL TO EXPLORE</a>
     </section>
 
-    <section class="section" id="about">
-      <p class="eyebrow">01 / ABOUT ME</p>
-      <h2 class="section-title">A little about <span>me.</span></h2>
-      <div class="about-card">
-        <div class="about-symbol">R<span>.</span></div>
-        <div>
-          <h3>Student today. Developer in progress.</h3>
-          <p>
-            I'm pursuing a B.Tech in Information Technology at JSPM University,
-            Wagholi, Pune. I'm building my programming fundamentals and
-            learning how to turn ideas into real applications.
-          </p>
-          <p>
-            My current focus is Java, data structures, HTML, CSS and JavaScript.
-            My goal is to become a skilled software engineer and contribute
-            to meaningful projects.
-          </p>
-          <p class="muted">Location: Pune, Maharashtra, India</p>
+    <section class="section container" id="about">
+      <div class="section-heading reveal"><p class="section-index">01 / ABOUT</p><h2>A little about <span class="gradient-text">me.</span></h2></div>
+      <div class="about-layout">
+        <div class="about-lead reveal"><span class="quote-mark">“</span><p>Learning to turn ideas into <span class="text-accent">useful digital experiences.</span></p></div>
+        <div class="about-copy reveal"><p>I'm Rajshekhar Ugale, a B.Tech Information Technology student with a growing interest in software development. I enjoy learning how things work, writing code, and improving through hands-on practice.</p><p>Right now, I’m focusing on frontend development and programming fundamentals while building projects that help me learn by doing.</p>
+          <div class="about-facts"><div><span class="fact-label">CURRENT ROLE</span><strong>IT Student</strong></div><div><span class="fact-label">FOCUS</span><strong>Web & Programming</strong></div><div><span class="fact-label">MINDSET</span><strong>Progress over perfection</strong></div></div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="skills">
-      <p class="eyebrow">02 / WHAT I'M LEARNING</p>
-      <h2 class="section-title">My <span>toolkit.</span></h2>
+    <section class="section container" id="skills">
+      <div class="section-heading reveal"><p class="section-index">02 / TOOLKIT</p><h2>Skills I'm <span class="gradient-text">building.</span></h2><p class="section-subtitle">A growing toolkit — learning, practising, and getting better every day.</p></div>
       <div class="skills-grid">
-        <article class="skill-card">
-          <span class="skill-number">01</span>
-          <h3>Programming</h3>
-          <p>Java · Python</p>
-        </article>
-        <article class="skill-card">
-          <span class="skill-number">02</span>
-          <h3>Web Development</h3>
-          <p>HTML · CSS · JavaScript</p>
-        </article>
-        <article class="skill-card">
-          <span class="skill-number">03</span>
-          <h3>Core Concepts</h3>
-          <p>Data Structures · Problem Solving</p>
-        </article>
-        <article class="skill-card">
-          <span class="skill-number">04</span>
-          <h3>Tools</h3>
-          <p>VS Code · Git · GitHub</p>
-        </article>
+        <article class="skill-card reveal"><div class="skill-icon">&lt;/&gt;</div><div><h3>HTML & CSS</h3><p>Page structure, layouts, responsive design</p></div><span class="skill-arrow">↗</span></article>
+        <article class="skill-card reveal"><div class="skill-icon js-icon">JS</div><div><h3>JavaScript</h3><p>Interactivity and web fundamentals</p></div><span class="skill-arrow">↗</span></article>
+        <article class="skill-card reveal"><div class="skill-icon java-icon">J</div><div><h3>Java</h3><p>Programming fundamentals and OOP</p></div><span class="skill-arrow">↗</span></article>
+        <article class="skill-card reveal"><div class="skill-icon py-icon">Py</div><div><h3>Python</h3><p>Logic building and problem-solving</p></div><span class="skill-arrow">↗</span></article>
+        <article class="skill-card reveal"><div class="skill-icon git-icon">⌘</div><div><h3>Git & GitHub</h3><p>Version control and sharing projects</p></div><span class="skill-arrow">↗</span></article>
+        <article class="skill-card skill-card-note reveal"><span class="note-spark">✳</span><div><h3>Always in progress</h3><p>Next up: stronger JavaScript, React, and DSA.</p></div></article>
       </div>
-      <p class="muted note">Skills shown here are learning areas. Update them as you gain experience.</p>
     </section>
 
-    <section class="section" id="projects">
-      <p class="eyebrow">03 / SELECTED WORK</p>
-      <h2 class="section-title">Things I'm <span>building.</span></h2>
+    <section class="section container" id="projects">
+      <div class="section-heading reveal"><p class="section-index">03 / SELECTED WORK</p><h2>Things I've <span class="gradient-text">built.</span></h2><p class="section-subtitle">A few projects to practise real skills. Replace these sample entries with your actual projects and links.</p></div>
       <div class="projects-grid">
-        <article class="project-card">
-          <div class="project-top"><span>PROJECT_01</span><span>↗</span></div>
-          <h3>Personal Portfolio</h3>
-          <p>A responsive website to showcase my introduction, skills, projects and contact links.</p>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a href="#contact" class="project-link">Portfolio details →</a>
+        <article class="project-card project-featured reveal">
+          <div class="project-top"><span class="project-number">PROJECT / 01</span><span class="project-status"><i></i> PORTFOLIO</span></div>
+          <div class="project-art art-portfolio"><div class="art-browser"><div class="art-browser-bar"><i></i><i></i><i></i></div><div class="art-lines"><span></span><span></span><span></span></div><div class="art-blocks"><i></i><i></i><i></i></div></div><span class="art-symbol">&lt;R/&gt;</span></div>
+          <div class="project-info"><div><h3>Personal Portfolio</h3><p>A responsive home for my skills, learning journey, and projects.</p></div><a class="project-link" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="Edit this link to your portfolio repository">↗</a></div>
+          <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
         </article>
-        <article class="project-card">
-          <div class="project-top"><span>PROJECT_02</span><span>↗</span></div>
-          <h3>Data Structures Practice</h3>
-          <p>A collection of programs to practise stacks, queues, linked lists and sorting algorithms.</p>
-          <div class="tags"><span>Java / C</span><span>DSA</span></div>
-          <a href="#contact" class="project-link">Project details →</a>
+        <article class="project-card reveal">
+          <div class="project-top"><span class="project-number">PROJECT / 02</span><span class="project-status"><i></i> PRACTICE</span></div>
+          <div class="project-art art-task"><div class="task-ui"><div class="task-ui-title"><span>My tasks</span><b>+</b></div><div class="task-row"><i class="checked">✓</i><span></span></div><div class="task-row"><i></i><span></span></div><div class="task-row"><i></i><span></span></div></div></div>
+          <div class="project-info"><div><h3>Task Tracker</h3><p>A simple productivity app to practise DOM events and state.</p></div><a class="project-link" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="Edit this link to your task tracker repository">↗</a></div>
+          <div class="tag-list"><span>JavaScript</span><span>CSS</span><span>DOM</span></div>
         </article>
-        <article class="project-card">
-          <div class="project-top"><span>PROJECT_03</span><span>↗</span></div>
-          <h3>Coming Soon</h3>
-          <p>I'm working towards building more useful applications as I learn new technologies.</p>
-          <div class="tags"><span>Learning</span><span>Building</span></div>
-          <a href="#contact" class="project-link">Stay connected →</a>
+        <article class="project-card reveal">
+          <div class="project-top"><span class="project-number">PROJECT / 03</span><span class="project-status"><i></i> EXPLORING</span></div>
+          <div class="project-art art-data"><div class="data-chart"><div style="height:32%"></div><div style="height:55%"></div><div style="height:43%"></div><div style="height:76%"></div><div style="height:62%"></div><div style="height:92%"></div></div><div class="data-label">DATA / VISUAL</div></div>
+          <div class="project-info"><div><h3>Mini Data Dashboard</h3><p>A concept dashboard to explore displaying information clearly.</p></div><a class="project-link" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="Edit this link to your dashboard repository">↗</a></div>
+          <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
         </article>
       </div>
-      <p class="muted note">Replace these sample entries with your real projects and working repository links before submission.</p>
+      <p class="projects-note reveal"><span>↳</span> These are starter examples. Update the names, descriptions, and GitHub URLs to match projects you have actually made.</p>
     </section>
 
-    <section class="section contact-section" id="contact">
-      <p class="eyebrow">04 / GET IN TOUCH</p>
-      <h2 class="section-title">Let's build something<br><span>great.</span></h2>
-      <p class="contact-copy">
-        Have a project idea or want to connect? Find me on these platforms.
-      </p>
-      <div class="social-links">
-        <!-- Replace # with your actual profile URLs -->
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-        <a href="mailto:YOUR_EMAIL@example.com">Email ↗</a>
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+        <div class="section-heading reveal"><p class="section-index">04 / SAY HELLO</p><h2>Have an idea? Let's<br /><span class="gradient-text">build something.</span></h2></div>
+        <div class="contact-bottom reveal"><p>I’m always open to connecting with people who enjoy technology, learning, and creating useful things.</p><div class="contact-actions"><a class="button button-primary" href="mailto:your.email@example.com">Email me <span>↗</span></a><a class="social-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <a class="logo" href="#home">RAJ<span>.</span></a>
-    <p>Designed & built by Rajshekhar Ugale</p>
-    <p>© <span id="year"></span> · Keep learning. Keep building.</p>
-  </footer>
-
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="#home"><span class="brand-mark">R<span>.</span></span><span class="brand-name">RAJSHEKHAR<span class="brand-muted">/DEV</span></span></a><p>Designed with curiosity <span>✳</span> and a lot of practice.</p><span class="copyright">© <span id="year"></span> RAJSHEKHAR UGALE</span></div></footer>
 </body>
 </html>
